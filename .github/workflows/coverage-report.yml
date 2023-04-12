@@ -8,7 +8,7 @@ on:
 jobs:
   coverage-report:
     permissions:
-      contents: write
+      pages: write
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
