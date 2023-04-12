@@ -23,6 +23,10 @@
     </PackageReference>
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\ConsoleApp\ConsoleApp.csproj" />
+  </ItemGroup>
+
   <Target Name="GenerateHtmlCoverageReport" AfterTargets="GenerateCoverageResultAfterTest">
 	  <ReportGenerator ReportFiles="@(CoverletReport)" TargetDirectory="./CoverageReport" ReportTypes="Html;Latex" />
   </Target>
