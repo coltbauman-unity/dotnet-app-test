@@ -218,9 +218,15 @@ for (i = 0, l = charts.length; i < l; i++) {
 }
 
 var assemblies = [
+  {
+    "name": "ConsoleApp",
+    "classes": [
+      { "name": "ConsoleApp.Class1", "rp": "ConsoleApp_Class1.html", "cl": 3, "ucl": 3, "cal": 6, "tl": 21, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+      { "name": "Program", "rp": "ConsoleApp_Program.html", "cl": 0, "ucl": 3, "cal": 3, "tl": 7, "cb": 0, "tb": 0, "cm": 0, "tm": 0, "lch": [], "bch": [], "mch": [], "hc": [], "metrics": { } },
+    ]},
 ];
 
-var metrics = [];
+var metrics = [{ "name": "Cyclomatic complexity", "abbreviation": "cc", "explanationUrl": "https://en.wikipedia.org/wiki/Cyclomatic_complexity" }, { "name": "Line coverage", "abbreviation": "cov", "explanationUrl": "https://en.wikipedia.org/wiki/Code_coverage" }, { "name": "Branch coverage", "abbreviation": "bcov", "explanationUrl": "https://en.wikipedia.org/wiki/Code_coverage" }];
 
 var historicCoverageExecutionTimes = [];
 

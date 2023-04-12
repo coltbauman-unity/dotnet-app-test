@@ -36,23 +36,127 @@
 \setcounter{secnumdepth}{-1}
 \section{Summary}
 \begin{longtable}[l]{ll}
-\textbf{Generated on:} & 04/12/2023 - 11:36:55\\
-\textbf{Coverage date:} & 04/12/2023 - 11:36:55\\
+\textbf{Generated on:} & 04/12/2023 - 22:17:41\\
+\textbf{Coverage date:} & 04/12/2023 - 22:17:41\\
 \textbf{Parser:} & Cobertura\\
-\textbf{Assemblies:} & 0\\
-\textbf{Classes:} & 0\\
-\textbf{Files:} & 0\\
+\textbf{Assemblies:} & 1\\
+\textbf{Classes:} & 2\\
+\textbf{Files:} & 2\\
+\textbf{Covered lines:} & 3\\
+\textbf{Uncovered lines:} & 6\\
+\textbf{Coverable lines:} & 9\\
+\textbf{Total lines:} & 28\\
+\textbf{Line coverage:} & 33.3\% (3 of 9)\\
+\textbf{Covered branches:} & 0\\
+\textbf{Total branches:} & 0\\
+\textbf{Covered methods:} & 1\\
+\textbf{Total methods:} & 3\\
+\textbf{Method coverage:} & 33.3\% (1 of 3)\\
+\end{longtable}
+\section{Risk Hotspots}
+No risk hotspots found.
+\section{Coverage}
+\begin{longtable}[l]{|l|r|r|r|r|r|r|r|}
+\hline
+\textbf{Name} & \textbf{Covered} & \textbf{Uncovered} & \textbf{Coverable} & \textbf{Total} & \textbf{Line coverage} & \textbf{Branch coverage} & \textbf{Method coverage}\\
+\hline
+\textbf{ConsoleApp} & \textbf{3} & \textbf{6} & \textbf{9} & \textbf{28} & \textbf{33.3\%} & \textbf{} & \textbf{33.3\%}\\
+\hline
+ConsoleApp.Class1 & 3 & 3 & 6 & 21 & 50\% &  & 50\%\\
+\hline
+Program & 0 & 3 & 3 & 7 & 0\% &  & 0\%\\
+\hline
+\end{longtable}
+\newpage
+\section{ConsoleApp.Class1}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & ConsoleApp.Class1\\
+\textbf{Assembly:} & ConsoleApp\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{/home/runner/work/dotnet-app-test/dotnet-app-test/ConsoleApp/Class1.cs}\end{minipage} \\
+\textbf{Covered lines:} & 3\\
+\textbf{Uncovered lines:} & 3\\
+\textbf{Coverable lines:} & 6\\
+\textbf{Total lines:} & 21\\
+\textbf{Line coverage:} & 50\% (3 of 6)\\
+\textbf{Covered branches:} & 0\\
+\textbf{Total branches:} & 0\\
+\textbf{Covered methods:} & 1\\
+\textbf{Total methods:} & 2\\
+\textbf{Method coverage:} & 50\% (1 of 2)\\
+\end{longtable}
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{Method1()} & 100\% & 1 & 100\%\\
+\hline
+\textbf{Method2()} & 100\% & 1 & 0\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{/home/runner/work/dotnet-app-test/dotnet-app-test/ConsoleApp/Class1.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~using System;~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using System.Collections.Generic;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~using System.Linq;~\\
+\cellcolor{gray} &  & \verb~4~ & & \verb~using System.Text;~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~using System.Threading.Tasks;~\\
+\cellcolor{gray} &  & \verb~6~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~7~ & & \verb~namespace ConsoleApp~\\
+\cellcolor{gray} &  & \verb~8~ & & \verb~{~\\
+\cellcolor{gray} &  & \verb~9~ & & \verb~    public class Class1~\\
+\cellcolor{gray} &  & \verb~10~ & & \verb~    {~\\
+\cellcolor{gray} &  & \verb~11~ & & \verb~        public void Method1()~\\
+\cellcolor{green} & 1 & \verb~12~ & & \verb~        {~\\
+\cellcolor{green} & 1 & \verb~13~ & & \verb~            Console.WriteLine("Method1");~\\
+\cellcolor{green} & 1 & \verb~14~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~15~ & & \verb~~\\
+\cellcolor{gray} &  & \verb~16~ & & \verb~        public void Method2()~\\
+\cellcolor{red} & 0 & \verb~17~ & & \verb~        {~\\
+\cellcolor{red} & 0 & \verb~18~ & & \verb~            Console.WriteLine("Method2");~\\
+\cellcolor{red} & 0 & \verb~19~ & & \verb~        }~\\
+\cellcolor{gray} &  & \verb~20~ & & \verb~    }~\\
+\cellcolor{gray} &  & \verb~21~ & & \verb~}~\\
+\end{longtable}
+\newpage
+\section{Program}
+\subsection{Summary}
+\begin{longtable}[l]{ll}
+\textbf{Class:} & Program\\
+\textbf{Assembly:} & ConsoleApp\\
+\textbf{File(s):} & \begin{minipage}[t]{12cm}{/home/runner/work/dotnet-app-test/dotnet-app-test/ConsoleApp/Program.cs}\end{minipage} \\
 \textbf{Covered lines:} & 0\\
-\textbf{Uncovered lines:} & 0\\
-\textbf{Coverable lines:} & 0\\
-\textbf{Total lines:} & 0\\
-\textbf{Line coverage:} & \\
+\textbf{Uncovered lines:} & 3\\
+\textbf{Coverable lines:} & 3\\
+\textbf{Total lines:} & 7\\
+\textbf{Line coverage:} & 0\% (0 of 3)\\
 \textbf{Covered branches:} & 0\\
 \textbf{Total branches:} & 0\\
 \textbf{Covered methods:} & 0\\
-\textbf{Total methods:} & 0\\
-\textbf{Method coverage:} & \\
+\textbf{Total methods:} & 1\\
+\textbf{Method coverage:} & 0\% (0 of 1)\\
 \end{longtable}
-\section{Coverage}
-No assemblies have been covered.
+\subsection{Metrics}
+\begin{longtable}[l]{|l|r|r|r|}
+\hline
+\textbf{Method} & \textbf{Branch coverage} & \textbf{Cyclomatic complexity} & \textbf{Line coverage}\\
+\hline
+\textbf{$<$Main$>$$(...)} & 100\% & 1 & 0\%\\
+\hline
+\end{longtable}
+\subsection{File(s)}
+\subsubsection{/home/runner/work/dotnet-app-test/dotnet-app-test/ConsoleApp/Program.cs}
+\begin{longtable}[l]{lrrll}
+\textbf{} & \textbf{\#} & \textbf{Line} & \textbf{} & \textbf{Line coverage}\\
+\cellcolor{gray} &  & \verb~1~ & & \verb~// See https://aka.ms/new-console-template for more information~\\
+\cellcolor{gray} &  & \verb~2~ & & \verb~using ConsoleApp;~\\
+\cellcolor{gray} &  & \verb~3~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~4~ & & \verb~Console.WriteLine("Hello, World!");~\\
+\cellcolor{gray} &  & \verb~5~ & & \verb~~\\
+\cellcolor{red} & 0 & \verb~6~ & & \verb~var class1 = new Class1();~\\
+\cellcolor{red} & 0 & \verb~7~ & & \verb~class1.Method1();~\\
+\end{longtable}
 \end{document}
