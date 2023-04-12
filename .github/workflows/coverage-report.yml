@@ -1,0 +1,33 @@
+name: Coverage Report
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  coerage-report:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup .NET Core 7.0
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '7.0.x'
+      - name: Install dependencies
+        run: dotnet restore
+      - name: Build
+        run: dotnet build --configuration Release --no-restore
+      - name: Test
+        run: dotnet test --no-restore /p:CollectCoverage=true /p:CoverletOutputFormat=cobertura
+      - name: Upload HTML coverage report
+        uses: actions/upload-artifact@v2
+        with:
+          name: CoverageReport
+          path: ./CoverageReport
+      - name: Publish HTML coverage report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./CoverageReport
+          publish_branch: gh-pages
